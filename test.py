@@ -21,3 +21,5 @@ samfile = pysam.AlignmentFile("/Users/lachlan/Documents/Masters_Research_2019/Da
 counts = count(samfile, 'chr1:7833572-7839685')
 
 print(counts)
+
+#fuck u liam
