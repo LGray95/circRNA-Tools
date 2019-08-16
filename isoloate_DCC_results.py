@@ -31,7 +31,7 @@ def isolate_DCC_results(infile, outdir):
             if int(i.split('\t')[1]) >= 2:
                 filtered_out_list.append(i)
 
-        # Write to file
+        # Write output to  file
         outfile = open(outdir+sample_ID+'.txt', 'w')
         for i in filtered_out_list:
             outfile.write(str(i) + '\n')
