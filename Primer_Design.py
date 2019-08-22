@@ -17,7 +17,7 @@ def Primer_Design(circRNA_seq):
     Reverse_Primer = reverse_complementary(three_end + five_end)
 
     # Finding the index 200 nucleotides from the end of circRNA
-    index = (len(circRNA_seq)-180)
+    index = (len(circRNA_seq)-200)
     Forward_Primer = circRNA_seq[index:(index+20)]
 
     # Printing output to user
@@ -29,4 +29,5 @@ def Primer_Design(circRNA_seq):
 
 
 
-Primer_Design("input_sequence")
+Primer_Design("Input Sequence")
+
