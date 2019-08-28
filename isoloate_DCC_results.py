@@ -13,6 +13,7 @@ def isolate_DCC_results(infile, outdir):
     in_DCC = open(infile).read().splitlines()
     # Read one columns at a time
     for k in range(3, total_columns):
+        print(k)
         out_list = []
         for i in in_DCC:
             col = i.split('\t')
@@ -32,7 +33,7 @@ def isolate_DCC_results(infile, outdir):
                 filtered_out_list.append(i)
 
         # Write output to  file
-        outfile = open(outdir+sample_ID+'.txt', 'w')
+        outfile = open(outdir+sample_ID+'_'+str(k-2)+'.txt', 'w')
         for i in filtered_out_list:
             outfile.write(str(i) + '\n')
         outfile.close()
